@@ -1,0 +1,45 @@
+baseURL = "https://indu.space/"
+theme = "neofeed-theme"
+languageCode = "en-uk"
+title = "Indu's space"
+description = "something something"
+# How many feed entries to load at once
+paginate = 6
+
+[taxonomies]
+tag = "tags"
+
+[author]
+name = "Indrani Jayam"
+# Your profile image. External link or relative to static/.
+image = "https://placehold.co/400"
+about = "something"
+
+[params]
+# Name of a file in static/skins/ without the ".css" extension
+skin = "macintosh"
+
+#
+# Totally optional cool stuff (see README and https://indieweb.org/Getting_Started for details)
+#
+# socialImage = "static/img/social.png" # site image for rich embeds
+# customCSS = "css/style.css" # relative to ./static/
+# plausible = true
+# paymentPointer = "$wallet.provider.com/myspecialid123"
+# webmentionUrl = "https://webmention.io/example/webmention"
+# pingbackUrl = "https://webmention.io/example/xmlrpc"
+# micropubUrl = "https://example.com/.netlify/functions/micropub"
+# microsubUrl = "https://aperture.p3k.io/microsub/example"
+
+#
+# For IndieAuth and the author card
+#
+# githubuser = "chihiro"
+# twitteruser = "chihiro" # no @ in front
+# mastodon = "https://mastodon.technology/@chihiro" # full link to your instance profile
+
+[permalinks]
+feed = "/:title/"
+
+[outputs]
+  home = ["HTML", "JSON", "RSS"]
